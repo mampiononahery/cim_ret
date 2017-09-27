@@ -1,0 +1,204 @@
+.slider-wrap {
+position: relative;
+margin: 10px auto;
+/*width: 580px;*/
+}
+.slider {
+position: relative;
+width: 500px;
+margin: auto;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+ul li {
+list-style: none;
+text-align: center;
+padding: 0;  
+margin: 0;
+}
+
+#vignettes_retouche{
+    padding-left: 30px;
+}
+
+#apercu_retouche{
+
+}
+
+span.vi {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    /*height: 85px;*/
+    float:left;
+    margin: 5px;
+}
+
+.portion-vignettes{
+    width: 230px;
+    display: inline-block;
+    position: relative;
+    /*left: -230px;*/
+    left: 0;
+}
+
+#wrapper-tous-portions{
+    overflow: hidden;
+    height: 600px;
+    /*width: 1000px;*/
+    white-space: nowrap;
+}
+
+img.vi {
+    width: 100%;
+}
+
+ul li span img {
+border:2px solid  #ee36b2;
+
+}
+.slider-arrow {
+position: absolute;
+ width: 28px;
+ height: 46px;
+
+color: #fff;
+text-align: center;
+text-decoration: none;
+top:12px;
+
+}
+.sa-left {
+left: -30px;
+}
+.sa-right {
+right: -15px;
+}
+.limage {
+  width: 250px;
+  height: 350px;
+  display: table;
+  margin:0 auto;
+  border:2px solid  #ee36b2;
+}
+#likebox{
+    position: absolute;
+    top: 0;
+    right: 0;
+  height:40px;
+  padding:0px;
+
+}
+#textephoto{
+	 width: 400px;
+	 height:30px;
+	 display: table;
+  margin:0 auto;
+  color:orange;
+  font-family:"BebasNeue";
+  text-align:center;
+  font-size:25px;
+  
+  background-color:white;
+}
+.promo{
+	color:white;
+	margin-bottom:70px;
+	padding-top:10px;
+	border-top:2px solid white;
+}
+
+
+
+/* CCM */
+.ccm-card{
+    margin-bottom: 20px;
+    background-color:  rgba(200, 200, 200, 0.5);
+    height: 300px;
+    border-radius: 20px;
+}
+.ccm-number{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #f7f7f7;
+    color:#222;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 100px;
+}
+.ccm-title{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.ccm-text{
+
+}
+
+
+/* 5 colonnes */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+/* Transfert */
+#contenufinpaiement legend{
+    color: #ffffff;
+}
+
+#form_commentaires{
+    margin-left: 20px;
+}
+
+.plupload_button.plupload_start
+{
+    display:none;
+}
+
+.numero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
+    font-size: 2.5em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 20px;
+}

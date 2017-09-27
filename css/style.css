@@ -1,0 +1,297 @@
+ body{
+    	background-image:url("../images/fond_login.jpg");
+    	}
+
+@font-face {
+    font-family:"BebasNeue";
+    src:url(../fonts/BebasNeue.otf);
+}
+ .retouches{
+ 	height:300px;
+ 	background-color:#E3E3E3;
+ 	
+ }
+ #home{
+ 	
+padding-top:14px;
+ }
+#banniere{
+	
+	height:150px;
+	background-color:#d3d3d3;
+	opacity:0.9;
+	margin-top:10px;
+	
+	padding:0px 0px 0px 0px;
+	
+}
+#flash{
+	
+	height:120px;
+	background-color:#d3d3d3;
+	opacity:0.9;
+	margin-top:10px;
+	
+	
+}
+#footer{
+	height:40px;
+	text-align:center;
+	color:white;
+	padding-top:10px;
+	font-family: "BebasNeue";
+	
+	background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(50%,#ad1283), color-stop(100%,#de47ac)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+
+	
+}
+
+.list-inline >li>a {color:white;}
+a :hover{ text-decoration:none;}
+
+#barre_menu{
+	
+	height:56px;
+	margin-top:5px;
+	
+	background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(50%,#ad1283), color-stop(100%,#de47ac)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+
+}
+
+#contenu{
+	
+	height:450px;
+	margin-top:5px;
+	background-color:white;
+	opacity:0.9;
+	margin-top:5px;
+	
+	
+}
+
+#contenuretouches{
+	
+	min-height:450px;
+	margin-top:5px;
+	background-color:#E3E3E3;
+	margin-top:5px;
+	padding-top:20px;
+	text-align:center;
+	
+	
+}
+
+#contenu_upload{
+	min-height:450px;
+	margin-top:5px;
+	background-color:#E3E3E3;
+	margin-top:5px;
+	padding-top:20px;
+	font-family: "BebasNeue";
+	
+	
+}
+#zoneupload{
+	display:table;
+	margin:0 auto;
+}
+#contenuobjet{
+	
+	min-height:700px;
+	margin-top:5px;
+	background-color:#181818;
+	margin-top:5px;
+	text-align:center;
+	
+	
+}
+
+.navbar-default{
+		background: #cb60b3; /* Old browsers */
+background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(50%,#ad1283), color-stop(100%,#de47ac)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+	border-color:#cb60b3;
+	z-index:10001;
+	}
+	
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+    font-family: "BebasNeue";
+    font-size: 16px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color:#f3c6f8;
+}
+
+#drapeaux{
+	width:200px;
+	height:45px;
+	background-color:#fbd3f9;
+	opacity:0.9;
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding-top:12px;
+	color:black;
+	border-radius: 8px;
+}
+
+#drapeaux img{
+	
+	vertical-align:middle;
+	margin-right:3px;
+}
+
+
+.navbar {
+    position: static;
+}
+.navbar .nav > li {
+ z-index:10001;
+
+}
+#mnu_mode .visuel {
+	position:relative;
+	background-image:url(../images/01.png);
+	background-repeat: no-repeat;
+	background-position:0px 0px;
+	width:221px;
+	height:303px;
+	border:none;
+	top:44px;
+	left:1px;
+}
+
+#connexion{
+	padding-top:5px;
+	height:40px;
+	 font-family: "BebasNeue";
+	 color:white;
+}
+.imgbeaute {
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.imgbeaute:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.col-center-block {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social{
+	width:32px;
+	height:32px;
+}
+.table>tbody>tr>th, .table>tbody>tr>td {
+    border-top: none;
+    color: white;
+    text-align: left;
+}
+#panier{
+	color:white;
+	margin-bottom:30px;
+	
+}
+.fb-like{
+	color:#FFFFFF;
+	margin-top: 15px;
+	}
+.beaute{
+	  display: none;
+}	
+
+#barre_retouches{
+	height:50px;
+	width:100%;
+	background: #ffb76b; /* Old browsers */
+	font-family: "BebasNeue";
+	
+	font-size:20px;
+background: -moz-linear-gradient(top,  #ffb76b 0%, #ff7f04 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76b), color-stop(100%,#ff7f04)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffb76b 0%,#ff7f04 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffb76b 0%,#ff7f04 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffb76b 0%,#ff7f04 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffb76b 0%,#ff7f04 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 ); /* IE6-9 */
+
+
+}
+#barre_retouches ul li {
+	padding-top:10px;
+}
+#barre_retouches ul li a:hover{
+	text-decoration:none;
+}
+.ractive{
+	height:50px;
+	background-color:#EE36B2;
+	color:white;
+}
+
+ input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 2em;
+}
+
+#contenubeaute{
+	
+	min-height:600px;
+	background-color:#181818;
+	text-align:center;
+	padding-top:10px;
+	
+}
+#contenucontact{
+	
+	min-height:450px;
+	background-color:#181818;
+	text-align:center;
+	padding-top:10px;
+	
+}
+ #contenufinpaiement{
+
+     min-height:450px;
+     background-color:#181818;
+     padding-top:10px;
+     color: #ffffff;
+
+ }
+
+ #contenu_authentification{
+     color: #ffffff;
+     min-height:450px;
+     background-color:#181818;
+     padding-top:10px;
+
+ }

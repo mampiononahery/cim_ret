@@ -1,0 +1,178 @@
+body {
+	font: 11px verdana, sans-serif;
+	background: #AFA99B url("../images/fond.jpg") top center no-repeat;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+}
+
+img {
+	border:none;
+}
+
+/*LIENS*/
+a {
+	color:#706448;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#854EC3;
+}
+
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	border:2px solid #544b36;
+	color:#FFFFFF;
+	padding:0px;
+}
+
+caption {
+	color:#544b36;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:14pt;
+	font-weight:bold;
+	padding:5px 0px 5px 0px;
+}
+
+.table_titre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size : 14px;
+}
+
+.table_entete {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+
+.table_contenu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight : bold;
+	color : #000099;
+}
+
+/* ------------------------------------------------------------------------------------
+Tha Drop-down Menu
+------------------------------------------------------------------------------------ */
+
+/* Elements de premier niveau
+--------------------------------------*/
+#menuDeroulant
+{
+	background: #000000;
+	/*background: #6A6458;*/
+	width: 1100px;
+	height: 0px;
+	/*height: 21px;*/
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: absolute;
+	top: 12px;
+	left: 145px;
+	/*top: 0;
+	left: 0;*/
+}
+#menuDeroulant li
+{
+	float: left;
+	width: 160px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#menuDeroulant li a:link, #menuDeroulant li a:visited
+{
+	display: block;
+	height: 1%;
+	color: #FFF;
+	/*background: #3B4E77;*/
+	margin: 0;
+	padding: 4px 8px;
+	/*border-right: 1px solid #fff;*/
+	border-right: 1px dotted #fff;
+	text-decoration: none;
+	font-weight:bold;
+}
+#menuDeroulant li a:hover { background-color: #000000; }
+#menuDeroulant li a:active { background-color: #000000; }
+
+#menuDeroulant .sousMenu
+{
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#menuDeroulant .sousMenu li
+{
+	float: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 159px;
+	border-top: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+#menuDeroulant .sousMenu li a:link, #menuDeroulant .sousMenu li a:visited
+{
+	display: block;
+	color: #FFF;
+	margin: 0;
+	border: 0;
+	text-decoration: none;
+	background: transparent url("../images/fondTR.png") repeat;
+}
+#menuDeroulant .sousMenu li a:hover
+{
+	background-image: none;
+	background-color: #544b36;
+}
+
+#menuDeroulant li:hover > .sousMenu { display: block; }
+
+#tout {
+	position : fixed;
+	height:600px;
+	width:800px;
+	border:2px solid #FF0000;
+}
+
+/**/
+.submit{
+     border:none;
+     color:#eedfda;
+	 background-color:#000000;
+     width:auto;
+     height:auto;
+	 font-weight:bold;
+	 cursor:pointer;
+	 border:2px solid #404040;
+	 font: 11px verdana, sans-serif;
+}
+
+a.submit :hover {
+	/*background-image: url('../images/ok.png');*/
+	background-color:#FFFFFF;
+	color:#000000;
+	border:1px solid #FF0000;
+	font: 11px verdana, sans-serif;
+}
+
+input, select {
+	border:none;
+	font: 11px verdana, sans-serif;
+}
+
+#imgManager {
+	width:520px;
+}
+
+.thumbnail {
+	border: 2px solid #544b36;
+}

@@ -1,0 +1,135 @@
+%!Adobe-FontList 1.10
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\courier.php
+FileModTime:1177565700
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSans.ctg.z
+FileModTime:1177565646
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSans.php
+FileModTime:1177565666
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSans.z
+FileModTime:1177565662
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSansBold.ctg.z
+FileModTime:1177565684
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSansBold.php
+FileModTime:1177565688
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\FreeSansBold.z
+FileModTime:1177565708
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\helvetica.php
+FileModTime:1177565710
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\helveticab.php
+FileModTime:1177565720
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\helveticabi.php
+FileModTime:1177565720
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\helveticai.php
+FileModTime:1177565732
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\symbol.php
+FileModTime:1177565734
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\tahoma.php
+FileModTime:1177565742
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\tahomab.php
+FileModTime:1177565744
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\times.php
+FileModTime:1177565750
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\timesb.php
+FileModTime:1177565750
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\timesbi.php
+FileModTime:1177565760
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\timesi.php
+FileModTime:1177565760
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Program Files\EasyPHP3\www\bookerone\gestion\fpdf\Font\zapfdingbats.php
+FileModTime:1177565770
+%EndFont
+

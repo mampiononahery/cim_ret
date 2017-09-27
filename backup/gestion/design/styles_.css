@@ -1,0 +1,453 @@
+html, body {
+	margin:0px;
+	height:100%;
+}
+
+#tout {
+	position:relative;
+}
+
+.table {
+	border:5px solid #544b36;
+	/*background-color:#D6D6D6;*/
+	background-color:#E5E5E5;
+	/*background-color:#FFFFFF;*/
+	color:#6B6B6B;
+	font-size:11px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+}
+
+.table_activite {
+	border:1px solid #000000;
+	/*background-color:#D6D6D6;*/
+	background-color:#E5E5E5;
+	/*background-color:#FFFFFF;*/
+	color:#6B6B6B;
+	font-size:11px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+}
+
+p {
+	color:#6B6B6B;
+	font-size:15px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+}
+
+.tr {
+	/*background-color:#000000 ;*/
+	background-color:#000000;
+	/*color:#FFFFFF;*/
+	color:#eedfda;
+	font-size:11px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+}
+
+input, select, textarea {
+	color:#6B6B6B;
+	font-size:10px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+	font-weight:bold;
+}
+
+/*LIENS*/
+a {
+	color:#FFFFFF;
+	font-family:Arial;
+	font-size:8pt;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#854EC3;
+	font-family:Arial;
+	font-size: 8pt;
+}
+
+.active {
+	color:#eedfda;
+	font-family:Arial;
+	font-style:italic;
+	font-size: 8pt;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+/*FORMULAIRE
+form {
+	position:absolute;
+	top:12px;
+	left:580px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffcccc;
+}
+
+input[type="text"] {
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffcccc;
+	width:100px;
+	height:5px;
+}*/
+
+.submit{
+     border:none;
+     color:#eedfda;
+	 background-color:#000000;
+     width:auto;
+     height:auto;
+	 font-weight:bold;
+	 cursor:pointer;
+	 border:2px solid #404040;
+}
+
+a.submit :hover {
+	/*background-image: url('../images/ok.png');*/
+	background-color:#FFFFFF;
+	color:#000000;
+	border:1px solid #FF0000;
+}
+
+.lien {
+	color:#6B6B6B;
+	font-weight:bold;
+}
+
+a.lien:hover {
+	color:#854EC3;
+	font-weight:bold;
+}
+
+/*FOND*/
+#fond {
+	position:relative;
+	align:center;
+	top:0px;
+	margin-bottom:-40px;
+}
+
+/*MENU*/
+#menu {
+	position:absolute;
+	top:58px;
+	left:180px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffffff;
+}
+
+/*LANGUES DRAPEAU*/
+#langue {
+	position:absolute;
+	top:68px;
+	left:977px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffffff;
+}
+
+#drapeau {
+	position:absolute;
+	top:54px;
+	left:977px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffffff;
+}
+
+#google_translate_element {
+	position:absolute;
+	top:52px;
+	left:700px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#ffffff;
+}
+
+/*QUI SOMMES-NOUS ? COMMENT CA MARCHE*/
+#qui_comment {
+	position:absolute;
+	top:252px;
+	left:161px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*RETOUCHE PHOTO*/
+#retouche_photo {
+	position:absolute;
+	top:252px;
+	left:490px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*PETITS MENUS*/
+#petits_menus {
+	position:absolute;
+	top:475px;
+	left:831px;
+	font-family:Arial;
+}
+
+p, a.pm {
+	font-size:6pt;
+	font-weight:bold;
+	color:#000000;
+	margin: 1px;
+	padding: .18em 0 .18em 0;
+}
+
+a.pm:hover {
+	font-size:6pt;
+	font-weight:bold;
+	color:#854EC3;
+}
+
+/*PUBLICITE*/
+#publicite {
+	position:absolute;
+	top:252px;
+	left:925px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*MONTAGE PHOTO*/
+#montage_photo {
+	position:absolute;
+	top:670px;
+	left:164px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*PHOTO ABIMEE*/
+#photo_abime {
+	position:absolute;
+	top:670px;
+	left:608px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*PIEDS*/
+#pieds {
+	position:absolute;
+	top:1000px;
+	left:535px;
+	font-family:Arial;
+	font-size:8pt;
+	color:#eedfda;
+	
+}
+
+/*TARIF*/
+#tarif {
+	position:absolute;
+	top:255px;
+	left:170px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*COMPTE*/
+#compte {
+	position:absolute;
+	top:255px;
+	left:170px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/*CONTACT*/
+#contact {
+	position:absolute;
+	top:255px;
+	left:170px;
+	font-family:Arial;
+	font-size:8pt;
+	font-weight:bold;
+	color:#eedfda;
+}
+
+/* CONTENU QUI SOMMES-NOUS */
+#contenu_qui_sommes {
+	position: absolute;
+	top:275px;
+	left:150px;
+	display:block;
+	/*border:1px solid #eedfda;*/
+	width : 310px;
+	height : 375px;
+	color:#6B6B6B;
+	font-size:11px;
+	font-family:"Trebuchet MS", Verdana, sans-serif;
+	filter:alpha(opacity=80);
+	-moz-opacity:.80;
+	opacity:.80;
+}
+
+/* CONTENU RETOUCHE PHOTO */
+#contenu_retouche_photo {
+	position: absolute;
+	top:275px;
+	left:485px;
+	display:block;
+	/*border:1px solid #eedfda;*/
+	width : 412px;
+	height : 375px;
+}
+
+/*CONTENU MONTAGE PHOTO*/
+#contenu_montage_photo {
+	position:absolute;
+	top:691px;
+	left:149px;
+	display:block;
+	/*border:1px solid #eedfda;*/
+	background-color:#FFFFFF;
+	width : 434px;
+	height : 281px;
+	filter:alpha(opacity=80);
+	-moz-opacity:.80;
+	opacity:.80;
+}
+
+/*CONTENU PHOTO ABIME*/
+#contenu_photo_abime {
+	position:absolute;
+	top:692px;
+	left:591px;
+	display:block;
+	/*border:1px solid #eedfda;*/
+	background-color:#FFFFFF;
+	width : 302px;
+	height : 280px;
+	filter:alpha(opacity=80);
+	-moz-opacity:.80;
+	opacity:.80;
+}
+
+/*CONTENU PUBLICITE*/
+#contenu_publicite {
+	position:absolute;
+	top:272px;
+	left:1055px;
+	display:block;
+	/*border:1px solid #eedfda;*/
+	width : 206px;
+	height : 700px;
+	filter:alpha(opacity=80);
+	-moz-opacity:.80;
+	opacity:.80;
+}
+
+/*LIRE LA SUITE*/
+a.suite {
+	color:#339999;
+	margin-left:230px;
+}
+
+a.suite:hover {
+	color:#854EC3;
+	margin-left:230px;
+}
+
+/*AVANT APRES */
+#avant {
+	position:absolute;
+	top:200px;
+	left:0px;
+	display:block;
+	border:1px solid #eedfda;
+	width:82px;
+	height:123px;
+}
+
+#apres {
+	position:absolute;
+	top:13px;
+	left:120px;
+}
+
+/*ACCES*/
+#acces {
+	position:absolute;
+	top:299px;
+	left:330px;
+	border:0px solid #eedfda;
+	width:33%;
+}
+
+#option_compte {
+	position:absolute;
+	top:298px;
+	left:178px;
+	border:2px solid #eedfda;
+	border-top:none;
+	border-left:none;
+	border-bottom:none;
+	width:150px;
+	height:657px;
+	background-color:#D4D3D9;
+}
+
+#inscription{
+	position:absolute;
+	top:299px;
+	left:328px;
+/*	border:0px solid #eedfda;*/
+}
+
+#confirmation {
+	position: absolute;
+	top:299px;
+	left:328px;
+}
+
+#activite {
+	position: absolute;
+	top:299px;
+	left:330px;
+	width:33%;
+}
+
+#mon_compte {
+	position: absolute;
+	top:299px;
+	left:918px;
+	width:550px;
+}
+
+#profil{
+	position: absolute;
+	top:299px;
+	left:330px;
+	width:33%;
+}
+
+#commander{
+	position: absolute;
+	top:299px;
+	left:328px;
+	width:50%;
+}
+
+img {
+	border:none;
+}
