@@ -655,7 +655,8 @@ class Home extends CI_Controller {
           
           $this->load->view('template/assets');
           $this->load->view('template/entete');
-          $this->load->view('transfert', $donnees);
+          //$this->load->view('transfert', $donnees);
+		  $this->load->view(transfert_rmh);
           $this->load->view('template/footer'); 
     }
 

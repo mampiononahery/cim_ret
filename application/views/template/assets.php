@@ -13,6 +13,7 @@
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/styles.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/bootstrap-dialog.min.css">

@@ -4,9 +4,9 @@
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<meta charset="utf-8">
 
 <head>
 
@@ -14,7 +14,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<title>myretooch.com::acc&egrave;s restreint</title>
+<title>myretooch.com::accés restreint</title>
 
 <!--<link rel="stylesheet" href="design/styles.css" type="text/css" media="all" />-->
 
@@ -38,7 +38,11 @@ body {
 
 }
 
-
+#message p.error_msg {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+}
 
 #btn_postuler {
 

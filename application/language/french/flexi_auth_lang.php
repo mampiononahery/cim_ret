@@ -47,12 +47,12 @@ $lang['email_activation_email_unsuccessful']		= 'Unable to send an email to acti
 // Login / Logout
 $lang['login_successful']							= 'Vous &ecirc;tes d&eacute;sormais connect&eacute;(e).';
 //$lang['login_unsuccessful']							= 'Les identifiants fournis sont invalides.';
-$lang['login_unsuccessful']							= "L'utilisateur n'est pas défini dans EVOCAP";
+$lang['login_unsuccessful']							= "L'utilisateur n'est pas défini dans Myretooch";
 
 
 $lang['logout_successful']							= 'Vous &ecirc;tes d&eacute;sormais d&eacute;connect&eacute;(e).';
 //$lang['login_details_invalid'] 						= 'Les identifiants fournis sont invalides.';
-$lang['login_details_invalid'] 						= "L'utilisateur n'est pas défini dans EVOCAP";
+$lang['login_details_invalid'] 						= "L'utilisateur n'est pas défini dans Myretooch";
 $lang['captcha_answer_invalid'] 					= 'CAPTCHA answer is incorrect.';
 $lang['login_attempts_exceeded'] 					= 'Le nombre maximum de tentatives de connexion est atteint, réessayer apr&egrave;s quelques minutes.';
 $lang['login_session_expired']						= 'Votre session est expir&eacute;e.';
