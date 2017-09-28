@@ -4,9 +4,9 @@
 		<div class="row">
 			<div class="col-md-2">
 				<h3 class="head_acpuisition">Répertoire</h3>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Lingerie</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Mode</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Extérieur</button>
+				<button type="button" class="btn btn-primary btn-small btn-block">Lingerie</button>
+				<button type="button" class="btn btn-primary btn-small btn-block">Mode</button>
+				<button type="button" class="btn btn-primary btn-small btn-block">Extérieur</button>
 			</div>
 			<div class="col-md-8">
 				<h3 class="head_acpuisition">Selection</h3>
@@ -29,7 +29,7 @@
 					
 				</div>
 				
-				<button type="button" class="btn btn-primary">Ajouter images</button>
+				<button type="button" class="btn btn-primary add_img">Ajouter images</button>
 				
 			</div>
 			<div class="col-md-2">
@@ -49,21 +49,33 @@
 		</div>
 		<div class="content_etapes">
 			<ul class="etapes_commentaire">
-				<li>	
+				<li class="etapes_actives">	
 					<i class="fa fa-check-square-o" aria-hidden="true"></i>
 					<span class="desc">Choix de la prestation</span>
 				</li>
-				<li>
+				<li class="arrow_next etapes_actives">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
+				<li class="etapes_actives">
 					<i class="fa fa-paypal" aria-hidden="true"></i>
 					<span class="desc">Paiement</span>
+				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 				</li>
 				<li>
 					<i class="fa fa-database" aria-hidden="true"></i>
 					<span class="desc">Téléchargement des photos</span>
 				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
 				<li>
 					<i class="fa fa-info" aria-hidden="true"></i>
 					<span class="desc">Inscription</span>
+				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 				</li>
 				<li>
 					<i class="fa fa-cogs" aria-hidden="true"></i>
@@ -71,9 +83,10 @@
 				</li>
 			</ul>
 		</div>
-		
-		<button type="button" class="btn btn-primary">Transfert</button>
-		<button type="button" class="btn btn-primary">Annuler</button>
+		<div class="content_btn_transfert">
+			<button type="button" class="btn btn-primary">Transfert</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		</div>
 	</div>
 </div>
 
@@ -116,6 +129,12 @@
 		cursor: pointer;
 		position: relative;
 	}
+	#content_acpuisition .chose_position {
+		position: absolute;
+		right: 5px;
+		top: 0;
+		z-index: 2;
+	}
 	#content_acpuisition .chosing_picto img {
 		width: 100%;
 	}
@@ -138,14 +157,35 @@
 	}
 	#content_acpuisition .etapes_commentaire li {
 		display: inline-block;
+		cursor: pointer;
 	}
 	#content_acpuisition .etapes_commentaire li > i.fa {
 		font-size: 50px;
 		margin: 0 35px;
-		color: #00be48;
 	}
 	#content_acpuisition .etapes_commentaire li > span.desc {
-		display: block;
+		display: grid;
 		color: #ffffff;
+		width: 150px;
+		margin-top: 20px;
+	}
+	#content_acpuisition .etapes_actives {
+		color: #00be48;
+	}
+	#content_acpuisition .arrow_next {
+		vertical-align: top;
+	}
+	#content_acpuisition .arrow_next i.fa {
+		margin: 0 !important;
+	}
+	#content_acpuisition .add_img {
+		clear: both;
+		float: right;
+		margin-top: 50px;
+		overflow: hidden;
+	}
+	#content_acpuisition .content_btn_transfert {
+	  margin-bottom: 20px;
+	  text-align: right;
 	}
 </style>
