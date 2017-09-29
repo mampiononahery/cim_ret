@@ -1,4 +1,6 @@
 .htaccess
 .idea/
 .project
-
+.idea/workspace.xml
+/application/config/database.php
+/application/config/config.php

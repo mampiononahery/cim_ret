@@ -608,7 +608,7 @@
 	
 	// Site title shown as 'from' header on emails.
 	//$config['email']['site_title'] = "flexi auth";
-	$config['email']['site_title'] = "APPLICATION SERVEUR WEB MYRETOOCH";
+	$config['email']['site_title'] = "APPLICATION SERVEUR WEB EVOCAP";
 	
 	// Reply email shown as 'from' header on emails.
 	$config['email']['reply_email'] = "web@bni.mg";

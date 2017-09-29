@@ -39,8 +39,6 @@ class Home extends CI_Controller {
 
         if(!$this->flexi_auth->is_logged_in()){
             redirect('auth');
-
-
         } 
     }
 
@@ -59,6 +57,14 @@ class Home extends CI_Controller {
      * map to /index.php/welcome/<method_name>
      * @see http://codeigniter.com/user_guide/general/urls.html
      */
+
+    public function fileupload(){
+
+        
+        error_reporting(E_ALL | E_STRICT);
+        require('UploadHandler.php');
+        $upload_handler = new UploadHandler();
+    }
     public function index() {
 
         
@@ -488,7 +494,99 @@ class Home extends CI_Controller {
         }
     }
 
-    public function finpaiement() {
+    /**
+    *
+    *
+    */
+
+    public function finpaiement()
+    {
+         $pp_hostname = "www.sandbox.paypal.com"; // Change to www.sandbox.paypal.com to test against sandbox
+        // read the post from PayPal system and add 'cmd'
+        $req = 'cmd=_notify-synch';
+
+
+        $tx_token = $_GET['tx'];
+        $auth_token = "mpNv8TxyeIOk4uFeie0vBtVBfp_QSC17oWjExKCXENTQH3hDSMNxL4k2JkC";
+        $req .= "&tx=$tx_token&at=$auth_token";
+
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, "https://$pp_hostname/cgi-bin/webscr");
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $req);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        //set cacert.pem verisign certificate path in curl using 'CURLOPT_CAINFO' field here,
+        //if your server does not bundled with default verisign certificates.
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array("Host: $pp_hostname"));
+        $res = curl_exec($ch);
+        $error = curl_error($ch);
+        curl_close($ch);
+        if (!$res) {
+            echo $error;
+            //http://127.0.0.1:8080/myretooch2/index.php/home/finpaiement?tx=7514096072772520F&st=Pending&amt=6%2e90&cc=EUR&cm=1&item_number=1
+            //HTTP ERROR
+        } else{
+
+             $lines = explode("\n", $res);
+
+            $keyarray = array();
+            if (strcmp($lines[0], "SUCCESS") == 0)
+            {
+
+                for ($i = 1; $i < count($lines); $i++) {
+                    if ($lines[$i] != '') {
+                        list($key, $val) = explode("=", $lines[$i]);
+                        $keyarray[urldecode($key)] = urldecode($val);
+                    }
+                }
+               
+
+
+                /**
+                * NOTE POUR PAYPAL
+                *
+                */
+                $type_formule       = $keyarray["item_number"];
+                $quantite_image     = $keyarray["quantity"];
+                $nombre_image =  $keyarray["custom"];
+                $prenom             = $keyarray["first_name"];
+                $nom                = $keyarray["last_name"];
+                $email              = $keyarray["payer_email"];
+                $payer_id = $keyarray["payer_id"];
+                $amount = $keyarray['payment_gross'];
+                $address_street = @$keyarray['address_street'];
+                $address_country = @$keyarray['address_country'];
+                $address_city = @$keyarray['address_city'];
+
+                $data = array();
+                $data["paypal"] = $keyarray;
+                $ligne_active = array(
+                    "prestation"=>1,
+                    "payement"=>1,
+                    "telechargment"=>0,
+                    "inscription"=>0,
+                    "choix_identification"=>0
+                );
+                $data["active_ligne"] = $ligne_active;
+
+            }
+
+
+
+            $this->load->view('template/assets');
+            $this->load->view('template/entete');
+              //$this->load->view('transfert', $donnees);
+            $this->load->view("transfert",$data);
+            $this->load->view('template/footer'); 
+        }
+    }
+
+
+
+
+    public function finpaiement_anncien() {
         //PDT identity token : mpNv8TxyeIOk4uFeie0vBtVBfp_QSC17oWjExKCXENTQH3hDSMNxL4k2JkC
         //James Soiby
         //Secure Merchant Account ID : HQJB2644GHPKS
@@ -522,7 +620,7 @@ class Home extends CI_Controller {
             // parse the data
             $lines = explode("\n", $res);
 
-          
+
 
             $keyarray = array();
             if (strcmp($lines[0], "SUCCESS") == 0) {
@@ -655,8 +753,7 @@ class Home extends CI_Controller {
           
           $this->load->view('template/assets');
           $this->load->view('template/entete');
-          //$this->load->view('transfert', $donnees);
-		  $this->load->view(transfert_rmh);
+          $this->load->view('transfert', $donnees);
           $this->load->view('template/footer'); 
     }
 

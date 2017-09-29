@@ -10,9 +10,9 @@
  * http://www.opensource.org/licenses/MIT
  */
 
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class UploadHandler extends CI_Controller {
+class UploadHandler extends CI_Controller 
 
 {
 
@@ -47,6 +47,7 @@ class UploadHandler extends CI_Controller {
         $this->response = array();
         $this->options = array(
             'script_url' => $this->get_full_url().'/'.$this->basename($this->get_server_var('SCRIPT_NAME')),
+            'delete_url'=>base_url("upload/delete_file"),
             'upload_dir' => dirname($this->get_server_var('SCRIPT_FILENAME')).'/files/',
             'upload_url' => $this->get_full_url().'/files/',
             'input_stream' => 'php://input',
@@ -265,10 +266,13 @@ class UploadHandler extends CI_Controller {
     }
 
     protected function set_additional_file_properties($file) {
-        $file->deleteUrl = $this->options['script_url']
-            .$this->get_query_separator($this->options['script_url'])
+        $file->deleteUrl = $this->options['delete_url']
+            .$this->get_query_separator($this->options['delete_url'])
             .$this->get_singular_param_name()
             .'='.rawurlencode($file->name);
+
+
+
         $file->deleteType = $this->options['delete_type'];
         if ($file->deleteType !== 'DELETE') {
             $file->deleteUrl .= '&_method=DELETE';
@@ -352,16 +356,20 @@ class UploadHandler extends CI_Controller {
 
     function get_config_bytes($val) {
         $val = trim($val);
+        $nb  = intval($val);
+
+
         $last = strtolower($val[strlen($val)-1]);
+        
         switch($last) {
             case 'g':
-                $val *= 1024;
+                $nb*= 1024;
             case 'm':
-                $val *= 1024;
+                $nb *= 1024;
             case 'k':
-                $val *= 1024;
+                $nb *= 1024;
         }
-        return $this->fix_integer_overflow($val);
+        return $this->fix_integer_overflow($nb);
     }
 
     protected function validate($uploaded_file, $file, $error, $index) {

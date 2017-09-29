@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Upload extends Controller {
+class Upload extends CI_Controller {
 
 public function __construct()
     {
@@ -67,7 +67,14 @@ public function do_upload()
         }
     }
 
-
+public function delete_file(){
+    $file = $this->input->get("file");
+   $success =unlink(FCPATH.'files/' .$file);
+        //info to see if it is doing what it is supposed to 
+        $info->sucess =$success;
+        $info->path =base_url().'files/' .$file;
+        $info->file =is_file(FCPATH.'files/' .$file);
+}
 public function deleteImage($file)//gets the job done but you might want to add error checking and security
     {
         $success =unlink(FCPATH.'uploads/' .$file);

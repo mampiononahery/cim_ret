@@ -1,348 +1,309 @@
-<div class="row">
+<?php $radoms = rand(0,10); ?>
 
-    <div class="col-xs-10 col-xs-offset-1" id="contenufinpaiement">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/dropzone.min.css') ?>">
 
-        <h1>Vous pouvez selectionner <?php echo ($nb_images > 1)?"jusqu'à":""?> <?php echo $nb_images ?> photo<?php echo ($nb_images > 1)?"s":""?></h1>
+<div id="content_acpuisition" class="row">
+	<div class="col-md-offset-1 col-md-10">
+		<div class="row">
+			<div class="col-md-2">
+				<h3 class="head_acpuisition">Répertoire</h3>
+				<button type="button" class="btn btn-primary btn-small btn-block">Lingerie</button>
+				<button type="button" class="btn btn-primary btn-small btn-block">Mode</button>
+				<button type="button" class="btn btn-primary btn-small btn-block">Extérieur</button>
+			</div>
+			<div class="col-md-8">
+				<h3 class="head_acpuisition">Selection</h3>
+				<div class="picto_selection">
+					<div class="dropzone">
+						<div class="dz-message">
+							<h3> Ajouter des fichiers ici</h3>
+						</div>
+					</div>
+				    
+					
+					
+				</div>
 
-        <?php if(isset($abonnement)) { ?>
+				
 
-            <h4>Votre abonnement expirera le <?php echo $abonnement->date ?></h4>
 
-        <?php } ?>
 
-        <div id="files_transfer">
-
-           <!--  <?php echo $error;?> -->
-
-<div class="container">
-    <!-- The file upload form used as target for the file upload widget -->
-    <form id="fileupload" action="<?php echo base_url('assets/fileupload/server/php/index.php') ?>" method="POST" enctype="multipart/form-data">
-        <!-- Redirect browsers with JavaScript disabled to the origin page -->
-        <noscript><input type="hidden" name="redirect" value="https://blueimp.github.io/jQuery-File-Upload/"></noscript>
-        <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-        <div class="row fileupload-buttonbar">
-            <div class="col-lg-7">
-                <!-- The fileinput-button span is used to style the file input field as button -->
-                <span class="btn btn-success fileinput-button">
-                    <i class="glyphicon glyphicon-plus"></i>
-                    <span>Ajouter image</span>
-                    <input type="file" name="files[]" multiple>
-                </span>
-                <button type="submit" class="btn btn-primary start">
-                    <i class="glyphicon glyphicon-upload"></i>
-                    <span>Commencer le transfert</span>
-                </button>
-                <button type="reset" class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Annuler le transfert</span>
-                </button>
-                <button type="button" class="btn btn-danger delete">
-                    <i class="glyphicon glyphicon-trash"></i>
-                    <span>Supprimer</span>
-                </button>
-                <input type="checkbox" class="toggle">
-                <!-- The global file processing state -->
-                <span class="fileupload-process"></span>
-            </div>
-            <!-- The global progress state -->
-            <div class="col-lg-5 fileupload-progress fade">
-                <!-- The global progress bar -->
-                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar progress-bar-success" style="width:0%;"></div>
-                </div>
-                <!-- The extended global progress state -->
-                <div class="progress-extended">&nbsp;</div>
-            </div>
-        </div>
-        <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-    </form>
-    <br>
-    
+				
+				
+				
+			</div>
+			<div class="col-md-2">
+				<h3 class="head_acpuisition">Commentaire</h3>
+				<ul class="coment_liste">
+					<li>Retoucher les yeux</li>
+					<li>Retires les rides & Lisser la peau ....</li>
+					<li>Eclaircir la peau et la lissé</li>
+					<li>.........................</li>
+					<li>.........................</li>
+					<li>.........................</li>
+					<li>.........................</li>
+					<li>.........................</li>
+					<li>.........................</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content_etapes">
+			<ul class="etapes_commentaire">
+				<li class="etapes_actives">	
+					<i class="fa fa-check-square-o" aria-hidden="true"></i>
+					<span class="desc">Choix de la prestation</span>
+				</li>
+				<li class="arrow_next etapes_actives">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
+				<li class="etapes_actives">
+					<i class="fa fa-paypal" aria-hidden="true"></i>
+					<span class="desc">Paiement</span>
+				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
+				<li>
+					<i class="fa fa-database" aria-hidden="true"></i>
+					<span class="desc">Téléchargement des photos</span>
+				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
+				<li>
+					<i class="fa fa-info" aria-hidden="true"></i>
+					<span class="desc">Inscription</span>
+				</li>
+				<li class="arrow_next">	
+					<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+				</li>
+				<li>
+					<i class="fa fa-cogs" aria-hidden="true"></i>
+					<span class="desc">Choix des identifiant et mot de passe</span>
+				</li>
+			</ul>
+		</div>
+		<div class="content_btn_transfert">
+			<button type="submit" class="btn btn-primary">Transfert</button>
+			<button type="button" class="btn btn-danger">Annuler</button>
+		</div>
+		
+		</form>
+	</div>
+</div>
+<div id="tpl">
 	
-	<!-- The blueimp Gallery widget -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
-    <div class="slides"></div>
-    <h3 class="title"></h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <a class="play-pause"></a>
-    <ol class="indicator"></ol> 
+
+	 <p>test</p>
 </div>
-<!-- The template to display files available for upload -->
-<script id="template-upload" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-upload fade" >
-        <td>
-		
-		
-		
-            <span class="preview"></span>
-        </td>
-        <td>
-            <p class="name">{%=file.name%}</p>
-            <strong class="error text-danger"></strong>
-        </td>
-        <td>
-            <p class="size">Traitement...</p>
-            <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-bar progress-bar-success" style="width:0%;"></div></div>
-        </td>
-        <td>
-            {% if (!i && !o.options.autoUpload) { %}
-                <button class="btn btn-primary start" disabled>
-                    <i class="glyphicon glyphicon-upload"></i>
-                    <span>Demarrer</span>
-                </button>
-            {% } %}
-            {% if (!i) { %}
-                <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Annuler</span>
-                </button>
-            {% } %}
-        </td>
-    </tr>
-{% } %}
-</script>
-<!-- The template to display files available for download --> 
-<script id="template-download" type="text/x-tmpl">
-{% for (var i=0, file; file=o.files[i]; i++) { %}
-    <tr class="template-download fade">
-        <td>
-		
-		
-            <span class="preview">
-                {% if (file.thumbnailUrl) { %}
-                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
-                {% } %}
-            </span>
-        </td>
-        <td>
-            <p class="name">
-                {% if (file.url) { %}
-                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
-                {% } else { %}
-                    <span>{%=file.name%}</span>
-                {% } %}
-            </p>
-            {% if (file.error) { %}
-                <div><span class="label label-danger">Erreur</span> {%=file.error%}</div>
-            {% } %}
-        </td>
-        <td>
-            <span class="size">{%=o.formatFileSize(file.size)%}</span>
-        </td>
-        <td>
-            {% if (file.deleteUrl) { %}
-                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
-                    <i class="glyphicon glyphicon-trash"></i>
-                    <span>Effacer</span>
-                </button>
-                <input type="checkbox" name="delete" value="1" class="toggle">
-            {% } else { %}
-                <button class="btn btn-warning cancel">
-                    <i class="glyphicon glyphicon-ban-circle"></i>
-                    <span>Annuler</span>
-                </button>
-            {% } %}
-        </td>
-    </tr>
-{% } %}
-</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
-<script src="<?php echo base_url();?>assets/fileupload/js/vendor/jquery.ui.widget.js"></script>
-<!-- The Templates plugin is included to render the upload/download listings -->
-<script src="//blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
-<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
-<!-- The Canvas to Blob plugin is included for image resizing functionality -->
-<script src="//blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
-<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<!-- blueimp Gallery script -->
-<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
-<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.iframe-transport.js"></script>
-<!-- The basic File Upload plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload.js"></script>
-<!-- The File Upload processing plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-process.js"></script>
-<!-- The File Upload image preview & resize plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-image.js"></script>
-<!-- The File Upload audio preview plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-audio.js"></script>
-<!-- The File Upload video preview plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-video.js"></script>
-<!-- The File Upload validation plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-validate.js"></script>
-<!-- The File Upload user interface plugin -->
-<script src="<?php echo base_url();?>assets/fileupload/js/jquery.fileupload-ui.js"></script>
-<!-- The main application script -->
-<script src="<?php echo base_url();?>assets/fileupload/js/main.js"></script>
-	
-    
-
-
-        </div>
-
-        <br/>
-
-        <div>
-
-            <legend>Les commentaires</legend>
-
-            <form class="form-horizontal" id="form_commentaires">
-
-            </form>
-
-            <!-- <button class="btn pull-right" onclick="go_transfert();">Envoyer</button> -->
-
-            <div class="clearfix"></div>
-
-        </div>
-
-        <br/>
-
-        <div class="row">
-
-            <div class="col-xs-15">
-
-                <div class="ccm-card" style="background-color:green;"> 
-
-                    <div class="ccm-number">1</div>
-
-                    <div class="ccm-title">
-
-                        <h3>Choix de la prestation</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-15">
-
-                <div class="ccm-card" style="background-color:green;">
-
-                    <div class="ccm-number">2</div>
-
-                    <div class="ccm-title">
-
-                        <h3>Paiement</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-15">
-
-                <div class="ccm-card" style="background-color:green;">
-
-                    <div class="ccm-number">3</div>
-
-                    <div class="ccm-title">
-
-                        <h3>Téléchargement des photos</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-15">
-
-                <div class="ccm-card">
-
-                    <div class="ccm-number">4</div>
-
-                    <div class="ccm-title">
-
-                        <h3>Inscription</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-15">
-
-                <div class="ccm-card">
-
-                    <div class="ccm-number">5</div>
-
-                    <div class="ccm-title">
-
-                        <h3>Choix des identifiant et mot de passe</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<div id="imagesLimitModal" class="modal fade" role="dialog">
-
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-
-        <div class="modal-content">
-
-            <div class="modal-header">
-
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-                <h4 class="modal-title">Limite atteinte</h4>
-
-            </div>
-
-            <div class="modal-body">
-
-                <p>Vous avez sélectionné assez d'images</p>
-
-            </div>
-
-            <div class="modal-footer">
-
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
-
-            </div>
-
-        </div>
-
-
-
-    </div>
-
-</div>
+<script src="<?php echo base_url();?>assets/js/dropzone.js"></script>
 
 <script type="text/javascript">
+	$(document).ready(function(){
+		/*$('.selection_<?php echo $radoms; ?>').click(function(){
+			$(this).each(function(){
+				$(this).parent('.chosing_picto').toggleClass('picto_schecked');
+				var is_checked = $(this).parent('.chosing_picto').hasClass('picto_schecked');
+				if(is_checked !== true){
+					$(this).parent('.chosing_picto').find('.chose_position').attr('checked', false);
+				}else{
+					$(this).parent('.chosing_picto').find('.chose_position').attr('checked', true);
+				}
+				//$('.picto_schecked').find('.chose_position').attr('checked', true);
+			});
+		});
+
+
+		var myDropzone = new Dropzone("#my-awesome-dropzone", { 
+		url: "<?php echo base_url("home/fileupload"); ?>",
+		maxFiles: 2,
+		acceptedFiles:"image/*",
+		dictDefaultMessage : '<button type="button" class="btn btn-primary add_img">Ajouter images</button>',
+		previewTemplate : 
+							
+							'<div class="dz-preview dz-file-preview chosing_picto">'
+							+'<div class="chosing_picto">'
+							  +'<div class="dz-details">'
+							    
+							   + '<img data-dz-thumbnail />'
+							  +'</div>'
+							 
+							  +'<div class="dz-success-mark"><span>✔</span></div>'
+							 
+							  +'<div class="dz-error-message"><span data-dz-errormessage></span></div>'
+							  +'</div>'
+							+'</div>',
+		clickable: true
+
+
+		});
+
+		var list_file = [];
+
+		myDropzone.on("removedfile", function(file) {
+		 
+		  	
+		});
+		myDropzone.on("addedfile", function(file) {
+		
+		  list_file.push(file);
+
+		  	
+		});
+
+		myDropzone.on("error", function(file,errorMessage) {
+		
+		
+		  	
+		});
+*/
+		
+
+	});
 	
-	$('.fileinput-button').on("click",function(e){
-	  var n = $('.template-upload').length; 
-	  var x = "<?php echo $nb_images; ?>"-1;
-	  //alert( n ); //affiche 5
-	  if(n>x){
-		  alert('Vous avez déjà dépassé le nombre de photo à traité'); 
-		  e.preventDefault();
-	  }
-	  });
+	
+	Dropzone.autoDiscover = false;
+		var file= new Dropzone(".dropzone",{
+			url: "<?php echo base_url('upload_fichier/upload_files') ?>",
+			maxFilesize: 10,  // maximum size to uplaod 
+			method:"post",
+			acceptedFiles:"image/*", // allow only images
+			paramName:"userfile",
+			// dictInvalidFileType:"Image files only allowed", // error message for other files on image only restriction 
+			addRemoveLinks:true,
+			autoProcessQueue: true,
+			
+		});
+
+
+		$('#status').change(function(){
+			if($(this).val()=='Enable'){
+				$('.alert-success').show();
+				$('.alert-danger').hide();		
+				file.processQueue();
+			}else{
+				$('.alert-success').hide();
+				$('.alert-danger').show();
+			}
+		});
+//Upload file onchange 
+
+	file.on("sending",function(a,b,c){
+		a.token=Math.random();
+		c.append("token",a.token); //Random Token generated for every files 
+	});
+	
+	file.on("addedfile",function(a,b,c){
+			console.log("ato");
+		file.processQueue();
+	});
+
+
+	// delete on upload 
+
+	file.on("removedfile",function(a){
+		var token=a.token;
+		$.ajax({
+			type:"post",
+			data:{token:token},
+			url:"<?php echo base_url('upload_fichier/delete_image') ?>",
+			cache:false,
+			dataType: 'json',
+			success: function(res){
+				// alert('Selected file removed !');			
+
+			}
+
+		});
+	});
+
+	
+
+
+
+
+
 </script>
 
 
-
+<style type="text/css">
+	#content_acpuisition {
+		margin-bottom: 30px;
+	}
+	#content_acpuisition > div {
+		background-color: #181818;
+	}
+	#content_acpuisition h3.head_acpuisition {
+		text-align: center;
+		color: #ffffff;
+	}
+	#content_acpuisition .chosing_picto {
+		display: inline-table;
+		width: 90px;
+		height: 135px;
+		overflow: hidden;
+		margin-bottom: 15px;
+		cursor: pointer;
+		position: relative;
+		padding:2px;
+	}
+	#content_acpuisition .chose_position {
+		position: absolute;
+		right: 5px;
+		top: 0;
+		z-index: 2;
+	}
+	#content_acpuisition .chosing_picto img {
+		width: 100%;
+	}
+	#content_acpuisition .coment_liste {
+		margin: 0;
+		padding: 0;
+	}
+	#content_acpuisition .coment_liste li {
+		list-style-type: no;
+		text-align: left;
+		font-size: 12px;
+		color: #ffffff;
+	}
+	#content_acpuisition .etapes_commentaire {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	#content_acpuisition .etapes_commentaire li {
+		display: inline-block;
+		cursor: pointer;
+	}
+	#content_acpuisition .etapes_commentaire li > i.fa {
+		font-size: 50px;
+		margin: 0 35px;
+	}
+	#content_acpuisition .etapes_commentaire li > span.desc {
+		display: grid;
+		color: #ffffff;
+		width: 150px;
+		margin-top: 20px;
+	}
+	#content_acpuisition .etapes_actives {
+		color: #00be48;
+	}
+	#content_acpuisition .arrow_next {
+		vertical-align: top;
+	}
+	#content_acpuisition .arrow_next i.fa {
+		margin: 0 !important;
+	}
+	#content_acpuisition .add_img {
+		clear: both;
+		float: right;
+		margin-top: 50px;
+		overflow: hidden;
+	}
+	#content_acpuisition .content_btn_transfert {
+	  margin-bottom: 20px;
+	  text-align: right;
+	}
+</style>

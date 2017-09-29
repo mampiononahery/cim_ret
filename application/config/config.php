@@ -14,16 +14,14 @@
 | path to your installation.
 |
 */
+
+
 $baseUrl = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $baseUrl .= "://" . $_SERVER['HTTP_HOST'];
 $baseUrl .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 $config['base_url']     = $baseUrl;
 
-$root=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
-$root.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
 
-$config['base_url']     = $root;
-// ceci est unn test
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +51,9 @@ $config['index_page'] = '';
 | 'ORIG_PATH_INFO'	Uses the ORIG_PATH_INFO
 |
 */
-$config['uri_protocol']	= 'AUTO';
+//$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']	= 'REQUEST_URI';
+
 
 /*
 |--------------------------------------------------------------------------
